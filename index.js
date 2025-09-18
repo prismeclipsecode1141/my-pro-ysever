@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Proxy configuration
 app.use('/proxy', createProxyMiddleware({
-    target: 'http://example.com', // Change this to the target URL you want to proxy
+    target: 'www://spotify.com/', // Change this to the target URL you want to proxy
     changeOrigin: true,
     pathRewrite: {
         '^/proxy': '', // Remove /proxy from the request path
